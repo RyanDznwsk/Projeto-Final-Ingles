@@ -209,10 +209,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (finalScoreEl) finalScoreEl.textContent = `${score}/${totalQuestions}`;
         if (finalMsgEl) {
           let message = '';
-          if (score <= 3) message = "Continue estudando! Há muito a aprender sobre segurança alimentar!";
-          else if (score <= 5) message = "Muito bem! Continue aprendendo sobre sustentabilidade!";
-          else if (score <= 7) message = "Excelente! Você tem ótimo conhecimento sobre o tema!";
-          else message = "Perfeito! Você é um expert em sustentabilidade alimentar!";
+          if (score <= 3) message = "Keep studying! There is still much to learn about food security!";
+          else if (score <= 5) message = "Well done! Keep learning about sustainability!";
+          else if (score <= 7) message = "Excellent! You have a great understanding of the topic!";
+          else message = "Perfect! You are an expert in food sustainability!";
           finalMsgEl.textContent = message;
           if (score === totalQuestions && typeof confetti === 'function') {
             confetti({
